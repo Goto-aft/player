@@ -1,0 +1,15 @@
+<svg class="play-circle" xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 64 64">
+  <!-- Outer circle with a slight shadow -->
+  <circle cx="32" cy="32" r="30" fill="#e74d12" stroke="#e74d12" stroke-width="4"/>
+  
+  <!-- Play icon triangle centered inside the circle -->
+  <polygon points="25,20 45,32 25,44" fill="white" />
+
+  <!-- Add a subtle shadow effect (optional) -->
+  <filter id="shadow" x="10%" y="10%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="4" stdDeviation="2" flood-color="rgba(0, 0, 0, 0.2)" />
+  </filter>
+  
+  <!-- Apply the shadow to the circle -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="none" filter="url(#shadow)"/>
+</svg>

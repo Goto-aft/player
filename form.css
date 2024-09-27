@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* To make padding and border included in the element's width and height */
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url(/cover1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex; /* Center the content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  max-width: 500px; /* Responsive design with max width */
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+.main input {
+  width: 100%; /* Ensure it takes full width */
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Add border to input */
+  margin-bottom: 10px;
+}
+
+.main p {
+  padding: 8px 0; /* Top and bottom padding for spacing */
+  font-weight: bold;
+}
+
+.main button {
+  width: 100%; /* Full width of parent */
+  padding: 10px;
+  color: white;
+  background-color: #3263fe;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer; /* Add a pointer cursor to the button */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.main button:hover {
+  background-color: #244dc9; /* Slightly darker blue on hover */
+}

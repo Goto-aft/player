@@ -1,0 +1,173 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.music-player {
+  background-color: #22252b;
+  color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  height: 90vh;
+  
+}
+.middle{
+  line-height: 20px;
+}
+.middle h1{
+  font-size: 20px;
+  color: rgb(153, 153, 153);
+}
+.middle p{
+  color: #444b53;
+  margin-top: 5px;
+
+
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+
+}
+.top-left img , .top-right img {
+ width: 30px;
+ height: 30px;
+ text-decoration: none;
+}
+.top-left button,.top-right button{
+  text-decoration: none;
+ border-radius: 50%;
+ background-color: #2a2e34;
+ width: 40px;
+ height: 40px;
+ box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5) ;
+ border: solid;
+ border-color: #2a2e34;
+ cursor: pointer;
+ padding: 2px;
+}
+.top-left button ,.top-right button:hover {
+  transform: scale(1.1), Slight zoom-in on hover;
+}
+.album-art img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-top: 50px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5) ;
+  border: solid;
+  border-color: #22252b;
+  animation: rotate 10s linear infinite;
+}
+#pause{
+  border-radius: 50%;
+  border-color:#22252b ;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border:none;
+  /* margin: 40px 40px 20px -10px; */
+  cursor: pointer;
+}
+@keyframes rotate{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.song-info {
+  margin-bottom: 15px;
+}
+
+.song-info h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.song-info p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #aaa;
+}
+
+
+
+.start-circle ,.end-circle,.circle-fill{
+  background: none;
+  border:none;
+  margin: 40px 40px 20px -10px;
+  cursor: pointer;
+  /* box-shadow: 3px 4px 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+.start-circle ,.end-circle,.circle-fill {
+  outline: none;
+}
+
+.progress-container {
+  width: 80%;
+  /* margin-top: 90px; */
+  display: flex;
+  text-align: center;
+  margin :90px 50px 0px 60px ;
+  color: red;
+}
+
+input[type="range"] {
+  width: 80%;
+  cursor: pointer;
+  /* margin-top: 50px; */
+  
+}ss
+
+.time {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #aaa;
+}
+.start-cycle{
+  color: white;
+  background-color: white;
+}
+/* Style for the control buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px;  */
+  width: 100%;
+  margin: 0px 10px 10px 10px ;
+  padding: 0px 50px 0px 15px;
+
+}
+/* Hover effect to make the buttons pop */
+.controls button:hover {
+  transform: scale(1.1), Slight zoom-in on hover;
+  /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3), 0px 8px 30px rgba(0, 0, 0, 0.25); */
+}
+
+.controls button:active {
+  transform: scale(0.95); /* Press down effect */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+.controls button img{
+  box-shadow: 0px 6px 12px rgba(182, 115, 14, 0.3), 0px 8px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+  border:solid ;
+  border-color:#22252b;
+}
+

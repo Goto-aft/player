@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="music-player">
+    <!-- Album Art Section -->
+    <div class="top">
+      <div class="top-left">
+        <button><img src="./icons/chevron-left.svg" alt=""></button>
+      </div>
+      <div class="middle">
+        <h1 id="artist-name">ARTIST NAME</h1> 
+        <p id="song-title">TITLE</p>
+      </div>
+      <div class="top-right">
+        <button><img src="./icons/three-dots-vertical (1).svg" alt=""></button>
+      </div>
+    </div>
+    <div class="album-art">
+      <img id="album-image" src="./cover/cover1.jpg" alt="Album Art">
+    </div>
+
+    <!-- Track Info -->
+    <div class="track-info">
+      <!-- <h2 id="track-title">No song playing</h2> -->
+    </div>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <input type="range" id="progress-bar" value="0" max="100" >
+    </div>
+    <!-- Timer -->
+    <div class="time">
+    <span id="current-time">00:00</span> / <span id="total-time">00:00</span>
+    </div>
+
+    
+    <audio id="audio" src="songs/song1.mp3"></audio>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev" class="start-circle"><img src="./icons/skip-start-circle.svg" alt=""></button>
+      <button id="play-pause" class="circle-fill"><img src="./icons/play-circle-fill.svg" alt=""></button>
+      <button id="next" class="end-circle"><img src="./icons/skip-end-circle.svg" alt=""></button>
+    </div>
+    <div>
+      <!-- <button id="pause"> <img src="./icons/pause-circle-fill.svg" alt=""></button> -->
+    </div>
+
+    
+  </div>
+
+  <script src="music.js"></script>
+
+</body>
+</html>
